@@ -52,6 +52,7 @@ print("Hellow, World!") # вывод на экран сообщения "Hellow,
 #
 # 1. Проверьте переменную PATH:
 #       echo $PATH
+#       echo $PATH | tr : '\n' | sort
 #
 #   На экран отобразится что-то подобное:
 #   /usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/user/bin
@@ -60,15 +61,15 @@ print("Hellow, World!") # вывод на экран сообщения "Hellow,
 #       cp helloworld.py /home/user/bin/helloworld
 #
 # 3. Если 2 шаг не удалость выполнить, тогда возможно нужно выполнить следующие шаги:
-#       - создать папку 'bin' в домашней директории(или выбрать другой каталог):
-#           mkdir ~/bin
-#       - Добавить путь '/home/user/bin' в переменную PATH
-#           PATH=$PATH:/home/user/bin
-#       где '/home/user/bin' – это каталог, который я хочу добавить к переменной PATH.
+#       - создать папку '.bin' в домашней директории(или выбрать другой каталог):
+#           mkdir ~/.bin
+#       - Добавить путь '/home/user/.bin' в переменную PATH
+#           PATH=$PATH:/home/user/.bin
+#       где '/home/user/.bin' – это каталог, который я хочу добавить к переменной PATH.
 #       - Проверьте добавился ли выбранный каталог в переменной PATH:
 #           echo $PATH
 #       - Скопируйте в данный каталог:
-#       cp helloworld.py /home/user/bin/helloworld
+#       cp helloworld.py /home/user/.bin/helloworld
 #
 #   Или в режиме суперпользователя добавить в каталог '/usr/local/bin'
 #       sudo cp helloworld.py /usr/local/bin/
