@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*- 
-
 # $ - При таком символе нужно переключиться в командную строку (CLI)
 
 
 print("--- Модули ---\n")
 
+
+## Модули
 
 # Пример: (сохраните как using_sys.py )
 import sys
@@ -31,7 +32,7 @@ print('\n\nПеременная PYTHONPATH содержит', sys.path, '\n')
 import os; print(os.getcwd())
 
 
-# Файлы байткода .pyc
+## Файлы байткода .pyc
 
 # Это байт-компилированные файлы (или байткод)
 
@@ -41,7 +42,7 @@ import os; print(os.getcwd())
 # Этот байткод также является платформо-независимым.
 
 
-# Оператор from ... import ...
+## Оператор from ... import ...
 
 # Чтобы импортировать переменную argv прямо в программу и не писать 
 # всякий раз sys. при обращении к ней, можно воспользоваться выражением
@@ -79,7 +80,7 @@ print(p)
 print(a)
 
 
-# Имя модуля – __name__
+## Имя модуля – __name__
 
 # Пример: (сохраните как using_name.py )
 
@@ -98,16 +99,16 @@ else:
 
 exit()
 
-$ cp prog/using_name.py using_name.py
-$ python3 using_name.py
+# $ cp prog/using_name.py using_name.py
+# $ python3 using_name.py
 # Помните, что модуль должен находиться либо в том же каталоге, что и программа,
 # в которую мы импортируем его, либо в одном из каталогов, указанных в sys.path .
 
-$ python3
+# $ python3
 import using_name
 
 
-# Создание собственных модулей
+## Создание собственных модулей
 
 # Пример: (сохраните как mymodule.py )
 
@@ -118,17 +119,16 @@ __version__ = '0.1'
 
 # Конец модуля mymodule.py
 
-$ cp prog/mymodule.py mymodule.py
-
-$ python3
+# $ cp prog/mymodule.py mymodule.py
+# $ python3
 import mymodule
 mymodule.sayhi()
 print ('Версия', mymodule.__version__)
 print ('Имя', mymodule.__name__)
-exit()
+# exit()
 
-cp prog/mymodule_demo.py mymodule_demo.py
-python3 mymodule_demo.py
+# $ cp prog/mymodule_demo.py mymodule_demo.py
+# $ python3 mymodule_demo.py
 
 # Вот версия, с синтаксисом from..import (сохраните как mymodule_demo2.py ):
 
@@ -137,10 +137,10 @@ from mymodule import sayhi, __version__
 sayhi()
 print('Версия', __version__)
 
-$ cp prog/mymodule_demo2.py mymodule_demo2.py
-$ python3 mymodule_demo2.py
+# $ cp prog/mymodule_demo2.py mymodule_demo2.py
+# $ python3 mymodule_demo2.py
 
-$ python3
+# $ python3
 import mymodule_demo2
 print ('Версия', mymodule_demo2.__version__)
 print ('Имя', mymodule_demo2.__name__)
@@ -151,11 +151,10 @@ from mymodule import *
 # потому что оно начинается с двойного подчёркивания
 
 
-# Функция dir
-# / ...code... /
+## Функция dir
 
 # Пример:
-$ python3
+# $ python3
 import sys # получим список атрибутов модуля 'sys'
 dir(sys)
 
@@ -182,7 +181,7 @@ dir(str)        # класс
 dir('print')    # функция
 
 
-# Пакеты
+## Пакеты
 
 # Пакеты - это просто каталоги с модулями и специальным файлом __init__.py , 
 # который показывает Python, что этот каталог особый, так как содержит модули Python.
