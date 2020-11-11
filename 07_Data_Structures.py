@@ -32,10 +32,10 @@ del shoplist[0]
 print('Я купил', olditem)
 print('Теперь мой список покупок:', shoplist)
 
-# $ cp prog/using_list.py using_list.py
-# $ python3 using_list.py
+#$ cp prog/using_list.py using_list.py
+#$ python3 using_list.py
 
-# python3
+#python3
 help(list)
 
 
@@ -53,10 +53,10 @@ print('Животные, привезённые из старого зоопар
 print('Последнее животное, привезённое из старого зоопарка -', new_zoo[2][2])
 print('Количество животных в новом зоопарке -', len(new_zoo)-1+len(new_zoo[2]))
 
-# $ cp prog/using_tuple.py using_tuple.py
-# $ python3 using_tuple.py
+#$ cp prog/using_tuple.py using_tuple.py
+#$ python3 using_tuple.py
 
-# python3
+#python3
 
 # Помните что например,
 print(1,2,3)
@@ -111,8 +111,8 @@ if 'Guido' in ab:
     print("\nАдрес Guido:", ab['Guido'])
 
 # Вывод:
-# $ cp prog/using_dict.py using_dict.py
-# python3 using_dict.py
+#$ cp prog/using_dict.py using_dict.py
+#python3 using_dict.py
 
 # python3
 help(dict)
@@ -147,10 +147,10 @@ print('Символы с 1 до -1:', name[1:-1])
 print('Символы от начала до конца:', name[:])
 
 # Вывод:
-# $ cp prog/seq.py seq.py
-# $ python3 seq.py
+#$ cp prog/seq.py seq.py
+#$ python3 seq.py
 
-# python3
+#python3
 shoplist = ['яблоки', 'манго', 'морковь', 'бананы']
 shoplist[::1]
 shoplist[::2]
@@ -172,7 +172,7 @@ bri.remove('Россия')
 
 bri & bric # OR bri.intersection(bric)
 
-# python3
+#python3
 help(set)
 
 
@@ -200,8 +200,8 @@ print('mylist:', mylist)
 # Обратите внимание, что теперь списки разные
 
 # Вывод:
-# $ cp prog/reference.py reference.py
-# $ python3 reference.py
+#$ cp prog/reference.py reference.py
+#$ python3 reference.py
 
 
 ## Ещё о строках
@@ -221,8 +221,8 @@ mylist = ['Бразилия', 'Россия', 'Индия', 'Китай']
 print(delimiter.join(mylist))
 
 # Вывод:
-# $ cp prog/str_methods.py str_methods.py
-# $ python3 str_methods.py
+#$ cp prog/str_methods.py str_methods.py
+#$ python3 str_methods.py
 
 help(str)
 

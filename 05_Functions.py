@@ -3,6 +3,7 @@
 
 print("--- Функции ---\n")
 
+
 # Пример: (сохраните как function1.py )
 # Создаем функцию sayHello
 def sayHello():
@@ -172,7 +173,7 @@ total2(10, 1, 2, 3, extra_number=50)
 
 ## Оператор «return»
 
-# Пример: (сохраните как func_return.py )
+# Пример: (сохраните как func_return.py)
 #!/usr/bin/python
 # Filename: func_return.py
 def maximum(x, y):

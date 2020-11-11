@@ -17,7 +17,7 @@ for i in sys.argv:
 print('\n\nПеременная PYTHONPATH содержит', sys.path, '\n')
 
 # Вывод (Enter in terminal):
-# $ python3 using_sys.py we are arguments
+#$ python3 using_sys.py we are arguments
 
 # Так что в приведённом примере 'using_sys.py'
 # будет элементом sys.argv[0] , 'we' – sys.argv[1] , 'are' – sys.argv[2] , а
@@ -90,21 +90,21 @@ else:
     print('Меня импортировали в другой модуль.')
 
 # Вывод:
-# $ python3 using_name.py
+#$ python3 using_name.py
 # Эта программа запущена сама по себе.
-# $ python3
+#$ python3
 # >>> import using_name
 # Меня импортировали в другой модуль.
 # >>>
 
 exit()
 
-# $ cp prog/using_name.py using_name.py
-# $ python3 using_name.py
+#$ cp prog/using_name.py using_name.py
+#$ python3 using_name.py
 # Помните, что модуль должен находиться либо в том же каталоге, что и программа,
 # в которую мы импортируем его, либо в одном из каталогов, указанных в sys.path .
 
-# $ python3
+#$ python3
 import using_name
 
 
@@ -119,16 +119,16 @@ __version__ = '0.1'
 
 # Конец модуля mymodule.py
 
-# $ cp prog/mymodule.py mymodule.py
-# $ python3
+#$ cp prog/mymodule.py mymodule.py
+#$ python3
 import mymodule
 mymodule.sayhi()
 print ('Версия', mymodule.__version__)
 print ('Имя', mymodule.__name__)
-# exit()
+#exit()
 
-# $ cp prog/mymodule_demo.py mymodule_demo.py
-# $ python3 mymodule_demo.py
+#$ cp prog/mymodule_demo.py mymodule_demo.py
+#$ python3 mymodule_demo.py
 
 # Вот версия, с синтаксисом from..import (сохраните как mymodule_demo2.py ):
 
@@ -137,10 +137,10 @@ from mymodule import sayhi, __version__
 sayhi()
 print('Версия', __version__)
 
-# $ cp prog/mymodule_demo2.py mymodule_demo2.py
-# $ python3 mymodule_demo2.py
+#$ cp prog/mymodule_demo2.py mymodule_demo2.py
+#$ python3 mymodule_demo2.py
 
-# $ python3
+#$ python3
 import mymodule_demo2
 print ('Версия', mymodule_demo2.__version__)
 print ('Имя', mymodule_demo2.__name__)
@@ -154,7 +154,7 @@ from mymodule import *
 ## Функция dir
 
 # Пример:
-# $ python3
+#$ python3
 import sys # получим список атрибутов модуля 'sys'
 dir(sys)
 

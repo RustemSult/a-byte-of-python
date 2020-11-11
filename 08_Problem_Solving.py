@@ -39,7 +39,7 @@ else:
     print('Создание резервной копии НЕ УДАЛОСЬ')
 
 # Вывод:
-# $ python3 backup_ver1.py
+#$ python3 backup_ver1.py
 
 
 ## Вторая версия
@@ -81,7 +81,7 @@ else:
     print('Создание резервной копии НЕ УДАЛОСЬ')
 
 # Вывод:
-# $ python3 backup_ver2.py
+#$ python3 backup_ver2.py
 
 
 ## Третья версия
@@ -129,7 +129,7 @@ else:
     print('Создание резервной копии НЕ УДАЛОСЬ')
 
 # Вывод:
-# $ python3 backup_ver3.py
+#$ python3 backup_ver3.py
 
 
 ## Четвёртая версия
@@ -177,9 +177,9 @@ else:
     print('Создание резервной копии НЕ УДАЛОСЬ')
 
 # Вывод:
-# $ python3 backup_ver4.py
+#$ python3 backup_ver4.py
 # non input
-# $ python3 backup_ver4.py
+#$ python3 backup_ver4.py
 # with input
 
 
